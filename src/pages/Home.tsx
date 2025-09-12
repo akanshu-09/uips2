@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import heroImage from '@/assets/hero-cow.jpg';
+import cattleBackground from '@/assets/cattle-background.jpg';
 import appIcon from '@/assets/app-icon.jpg';
 
 const Home = () => {
@@ -48,12 +49,14 @@ const Home = () => {
       <Card className="overflow-hidden shadow-lg">
         <div 
           className="h-48 bg-cover bg-center relative"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(${cattleBackground})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20" />
-          <div className="absolute bottom-4 left-4 text-white">
-            <h2 className="text-lg font-semibold">Identify Cattle & Buffalo Breeds</h2>
-            <p className="text-sm opacity-90">Take a photo to get instant results</p>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center text-white px-4">
+              <h2 className="text-2xl font-bold mb-2 drop-shadow-lg">Identify Cattle & Buffalo Breeds</h2>
+              <p className="text-base opacity-95 drop-shadow-md">Take a photo to get instant results</p>
+            </div>
           </div>
         </div>
       </Card>
